@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>مكتب المصطفى للمحاماة والاستشارات القانونية | يوسف مصطفى ضاهر</title>
+  <meta name="description" content="مكتب المصطفى للمحاماة والاستشارات القانونية يقدم خدمات قانونية متخصصة في تأسيس الشركات والملكية الفكرية والعلامات التجارية والقانون الأسري والمدني والجنائي والمالي وغيرها من الخدمات القانونية.">
+  <meta name="keywords" content="محاماة, استشارات قانونية, يوسف مصطفى ضاهر, تأسيس شركات, تسجيل علامات تجارية, ملكية فكرية, قانون مدني, قانون جنائي, قضايا أسرة, مصر">
+  <meta name="author" content="يوسف مصطفى ضاهر">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="مكتب المصطفى للمحاماة والاستشارات القانونية | يوسف مصطفى ضاهر">
+  <meta property="og:description" content="خبرة قانونية • استشارات متخصصة • حلول قانونية متكاملة للأفراد والشركات.">
+  <meta property="og:image" content="assets/logo.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  
+  <!-- Google Fonts: Cairo & Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR (Fixed / Sticky Header)
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <!-- Firm Identity & Logo -->
+      <a href="#home" class="nav-brand" aria-label="الرئيسية - مكتب المصطفى للمحاماة">
+        <div class="brand-logo-wrapper">
+          <!-- Logo Image (Replace with your actual logo in assets/logo.png) -->
+          <img src="assets/logo.png" alt="شعار مكتب المصطفى للمحاماة والاستشارات القانونية" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <!-- Fallback SVG Emblem in case logo image is missing -->
+          <div class="brand-logo-fallback" style="display:none;" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v18"></path>
+              <path d="M6 7l6-3 6 3"></path>
+              <path d="M6 7L3 14h6L6 7z"></path>
+              <path d="M18 7l-3 7h6l-3-7z"></path>
+              <path d="M4 21h16"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">المصطفى للمحاماة والاستشارات القانونية</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="القائمة الرئيسية">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">الرئيسية</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">خدماتنا</a></li>
+          <li class="nav-item"><a href="#why-us" class="nav-link">لماذا نحن</a></li>
+          <li class="nav-item"><a href="#team" class="nav-link">فريقنا</a></li>
+          <li class="nav-item"><a href="#consultation" class="nav-link">حجز استشارة</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">اتصل بنا</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Menu Toggle -->
+      <div class="nav-actions">
+        <a href="#consultation" class="btn btn-gold btn-sm nav-cta">طلب استشارة</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu" aria-label="قائمة التنقل للهواتف">
+      <div class="mobile-menu-header">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div class="brand-logo-wrapper" style="height: 42px; min-width: 42px; max-width: 95px; padding: 2px 6px;">
+            <img src="assets/logo.png" alt="شعار مكتب المصطفى" class="brand-logo">
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">المصطفى للمحاماة</span>
+            <span class="brand-lawyer">يوسف مصطفى ضاهر</span>
+          </div>
+        </div>
+        <button class="close-menu-btn" id="close-menu-btn" aria-label="إغلاق القائمة">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link active">الرئيسية</a></li>
+        <li><a href="#services" class="mobile-nav-link">خدماتنا القانونية</a></li>
+        <li><a href="#why-us" class="mobile-nav-link">لماذا مكتب المصطفى؟</a></li>
+        <li><a href="#team" class="mobile-nav-link">فريقنا</a></li>
+        <li><a href="#consultation" class="mobile-nav-link">حجز استشارة</a></li>
+        <li><a href="#contact" class="mobile-nav-link">اتصل بنا</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="tel:01023838513" class="btn btn-outline btn-full mb-2">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          01023838513
+        </a>
+        <a href="https://wa.me/201023838513" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          واتساب مباشر
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         PAGE 1 — HERO SECTION (الرئيسية)
+         ========================================================================= -->
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-pattern"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+
+          <!-- Main Heading -->
+          <h1 class="hero-title reveal">
+            مكتب المصطفى<br>
+            <span class="text-gold">للمحاماة والاستشارات القانونية</span>
+          </h1>
+
+          <!-- Subheading -->
+          <div class="hero-divider reveal">
+            <span class="divider-line"></span>
+            <span class="divider-scales">⚖</span>
+            <span class="divider-line"></span>
+          </div>
+
+          <p class="hero-subtitle reveal">
+            خبرة قانونية • استشارات متخصصة • حلول قانونية متكاملة
+          </p>
+
+          <!-- Short Professional Introduction -->
+          <p class="hero-description reveal">
+            نقدم خدمات قانونية واستشارات متخصصة للأفراد والشركات، مع الحرص على تقديم حلول قانونية عملية ومهنية تتناسب مع احتياجات كل عميل.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-buttons reveal">
+            <a href="#consultation" class="btn btn-gold btn-lg">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              احجز استشارتك
+            </a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              تواصل معنا
+            </a>
+          </div>
+
+          <!-- Trust Strip -->
+          <div class="hero-trust-bar reveal">
+            <div class="trust-item">
+              <span class="trust-icon">🔒</span>
+              <span class="trust-label">سرية تامة للمعلومات</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">⚖</span>
+              <span class="trust-label">دقة قانونية واحترافية</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">🤝</span>
+              <span class="trust-label">حلول واقعية ومدروسة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SERVICES SECTION (خدماتنا القانونية)
+         ========================================================================= -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">مجالات الممارسة</span>
+          <h2 class="section-title">خدماتنا القانونية</h2>
+          <div class="title-ornament">
+            <span class="line"></span>
+            <span class="symbol">⚖</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-subtitle">
+            نقدم حزمة متكاملة من الخدمات القانونية المصممة بعناية لتلبية احتياجات الأفراد والمؤسسات والشركات.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+                <path d="M14 9h3M14 13h3M14 17h3"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">تأسيس الشركات</h3>
+            <p class="service-desc">
+              خدمات تأسيس الشركات والإجراءات القانونية المرتبطة بها ومساعدة العملاء في اختيار الهيكل القانوني المناسب.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('تأسيس شركات')">
+              <span>طلب استشارة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <circle cx="12" cy="11" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">الملكية الفكرية</h3>
+            <p class="service-desc">
+              تقديم الاستشارات والحماية القانونية المتعلقة بحقوق الملكية الفكرية.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('ملكية فكرية')">
+              <span>طلب استشارة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M14.5 9h-5v6h5"></path>
+                <path d="M9.5 12h4"></path>
+                <path d="M12 15l2.5 3"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">تسجيل العلامات التجارية</h3>
+            <p class="service-desc">
+              المساعدة في إجراءات تسجيل العلامات التجارية وحمايتها قانونياً.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('تسجيل علامة تجارية')">
+              <span>طلب استشارة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">رعاية الأجانب والجنسية</h3>
+            <p class="service-desc">
+              تقديم الاستشارات والمساعدة القانونية المتعلقة بإجراءات الإقامة ورعاية الأجانب والجنسية وفقاً للقوانين والإجراءات المعمول بها.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('رعاية الأجانب والجنسية')">
+              <span>طلب استشارة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">القانون الأسري</h3>
+            <p class="service-desc">
+              التعامل مع مختلف المسائل والمنازعات المتعلقة بقضايا الأسرة والأحوال الشخصية.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('قانون الأسرة')">
+              <span>طلب استشارة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <line x1="10" y1="9" x2="8" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">القانون المدني</h3>
+            <p class="service-desc">
+              تقديم الاستشارات والتمثيل القانوني في المنازعات المدنية والالتزامات والعقود.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('القانون المدني')">
+              <span>طلب استشارة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service Card 7 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 3v18"></path>
+                <path d="M6 7l6-3 6 3"></path>
+                <path d="M6 7L3 14h6L6 7z"></path>
+                <path d="M18 7l-3 7h6l-3-7z"></path>
+                <path d="M4 21h16"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">القانون الجنائي</h3>
+            <p class="service-desc">
+              تقديم الاستشارات والدفاع والتمثيل القانوني في القضايا الجنائية.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('القانون الجنائي')">
+              <span>طلب استشارة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service Card 8 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">القانون المالي والتجاري</h3>
+            <p class="service-desc">
+              الاستشارات المتعلقة بالمسائل المالية والتجارية والمنازعات ذات الصلة.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('القانون المالي والتجاري')">
+              <span>طلب استشارة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <!-- Service Card 9 (General Services) -->
+          <div class="service-card service-card-featured reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">وغيرها من الخدمات القانونية</h3>
+            <p class="service-desc">
+              نقدم خدمات واستشارات قانونية متنوعة وفقاً لطبيعة كل حالة واحتياجات العميل.
+            </p>
+            <a href="#consultation" class="service-link" onclick="preselectService('أخرى')">
+              <span>استفسر عن خدمة خاصة</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         WHY CHOOSE US SECTION (لماذا مكتب المصطفى؟)
+         ========================================================================= -->
+    <section class="section why-us-section" id="why-us">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">قيمنا ونهجنا</span>
+          <h2 class="section-title">لماذا مكتب المصطفى؟</h2>
+          <div class="title-ornament">
+            <span class="line"></span>
+            <span class="symbol">⚖</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-subtitle">
+            نرتكز على مبادئ مهنية راسخة تضمن للعميل وضوح الموقف القانوني وأعلى درجات الرعاية والمتابعة.
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          <!-- Pillar 1: الاحترافية -->
+          <div class="why-card reveal">
+            <div class="why-card-inner">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <h3 class="why-title">الاحترافية</h3>
+              <p class="why-desc">التعامل مع كل قضية باهتمام ودقة.</p>
+            </div>
+          </div>
+
+          <!-- Pillar 2: السرية -->
+          <div class="why-card reveal">
+            <div class="why-card-inner">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="why-title">السرية</h3>
+              <p class="why-desc">الحفاظ على خصوصية وسرية معلومات العملاء.</p>
+            </div>
+          </div>
+
+          <!-- Pillar 3: الحلول القانونية -->
+          <div class="why-card reveal">
+            <div class="why-card-inner">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="why-title">الحلول القانونية</h3>
+              <p class="why-desc">تقديم حلول قانونية عملية ومدروسة.</p>
+            </div>
+          </div>
+
+          <!-- Pillar 4: التواصل المباشر -->
+          <div class="why-card reveal">
+            <div class="why-card-inner">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <h3 class="why-title">التواصل المباشر</h3>
+              <p class="why-desc">سهولة التواصل مع فريق المكتب ومتابعة العميل.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FOUNDER / LAWYER INTRODUCTION (الأستاذ يوسف مصطفى ضاهر)
+         ========================================================================= -->
+    <section class="section founder-section" id="founder">
+      <div class="container">
+        <div class="founder-card reveal">
+          <div class="founder-image-col">
+            <div class="founder-photo-frame">
+              <!-- Lawyer photo placeholder: Replace file at assets/youssef-mostafa.jpg -->
+              <img src="assets/youssef-mostafa.jpg" alt="الأستاذ يوسف مصطفى ضاهر" class="founder-photo" onerror="this.onerror=null; this.src='assets/logo.png';">
+              <div class="photo-accent-border"></div>
+            </div>
+          </div>
+          
+          <div class="founder-content-col">
+            <div class="founder-role">محامٍ وباحث قانوني | متخصص في القانون الإماراتي</div>
+            
+            <div class="founder-quote-box">
+              <p class="founder-bio">
+                يوسف مصطفى ضاهر، محامٍ وباحث قانوني، يعمل في مجال المحاماة والاستشارات القانونية، مع خبرة في القانون الإماراتي والأنظمة القانونية المعمول بها في دولة الإمارات العربية المتحدة، إلى جانب اهتمام بمجموعة متنوعة من المجالات القانونية وخدمة الأفراد والشركات.
+              </p>
+            </div>
+
+            <div class="founder-actions">
+              <a href="#consultation" class="btn btn-gold">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                طلب استشارة خاصة
+              </a>
+              <a href="https://wa.me/201023838513" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                محادثة واتساب
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PAGE 2 — OUR TEAM (فريقنا)
+         ========================================================================= -->
+    <section class="section team-section" id="team">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">الكوادر القانونية</span>
+          <h2 class="section-title">فريقنا</h2>
+          <div class="title-ornament">
+            <span class="line"></span>
+            <span class="symbol">⚖</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-subtitle">
+            فريق متفانٍ يجمع بين التخصص القانوني الدقيق والحرص على حماية مصالح عملائنا الكرام.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Team Member 1: Founder -->
+          <div class="team-card reveal">
+            <div class="team-photo-wrapper">
+              <img src="assets/youssef-mostafa.jpg" alt="يوسف مصطفى ضاهر" class="team-photo" onerror="this.onerror=null; this.src='assets/logo.png';">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">يوسف مصطفى ضاهر</h3>
+              <p class="team-role">محامٍ وباحث قانوني</p>
+              <p class="team-bio">
+                يوسف مصطفى ضاهر، محامٍ وباحث قانوني، يعمل في مجال المحاماة والاستشارات القانونية، مع اهتمام بمجموعة متنوعة من المجالات القانونية وخدمة الأفراد والشركات.
+              </p>
+              <div class="team-contact-links">
+                <a href="tel:01023838513" class="team-contact-btn" title="اتصال هاتفي" aria-label="اتصال هاتفي">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </a>
+                <a href="https://wa.me/201023838513" target="_blank" rel="noopener noreferrer" class="team-contact-btn" title="واتساب" aria-label="واتساب">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </a>
+                <a href="mailto:Almostafa.law@outlook.com" class="team-contact-btn" title="البريد الإلكتروني" aria-label="البريد الإلكتروني">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member Placeholder 1 -->
+          <!-- 
+               INSTRUCTION TO OFFICE OWNER:
+               To add a new team member, duplicate this card, replace image at assets/team-member-1.jpg,
+               and update the name, title, and bio accordingly.
+          -->
+          <div class="team-card team-card-placeholder reveal">
+            <div class="team-photo-wrapper">
+              <img src="assets/team-member-1.jpg" alt="عضو فريق قانوني جديد" class="team-photo" onerror="this.onerror=null; this.src='assets/logo.png';">
+              <div class="placeholder-tag">عضو فريق جديد</div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">فريق العمل القانوني</h3>
+              <p class="team-role">مستشار قانوني</p>
+              <p class="team-bio">
+                مساحة مخصصة لإضافة أعضاء جدد إلى الفريق القانوني لمكتب المصطفى. يتيح النظام إضافة المستشارين والباحثين القانونيين بسهولة.
+              </p>
+              <div class="team-status-pill">
+                <span>شاغر جاهز للإضافة</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member Placeholder 2 -->
+          <div class="team-card team-card-placeholder reveal">
+            <div class="team-photo-wrapper">
+              <img src="assets/team-member-2.jpg" alt="عضو فريق قانوني جديد" class="team-photo" onerror="this.onerror=null; this.src='assets/logo.png';">
+              <div class="placeholder-tag">عضو فريق جديد</div>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">فريق العمل القانوني</h3>
+              <p class="team-role">باحث قانوني</p>
+              <p class="team-bio">
+                مساحة مخصصة لإضافة باحث قانوني أو متخصص إداري ضمن فريق العمل. يمكن تخصيص هذه البطاقة في أي وقت عبر ملف index.html.
+              </p>
+              <div class="team-status-pill">
+                <span>شاغر جاهز للإضافة</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         VOICE SECTION (كلمة من فريقنا)
+         ========================================================================= -->
+    <section class="section voice-section" id="voice-message">
+      <div class="container">
+        <div class="voice-card reveal">
+          <div class="voice-card-header">
+            <div class="voice-icon-halo">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </div>
+            <div>
+              <span class="voice-tag">رسالة صوتية</span>
+              <h2 class="voice-title">كلمة من فريقنا</h2>
+            </div>
+          </div>
+
+          <p class="voice-intro">
+            استمع إلى كلمة من الأستاذ يوسف مصطفى ضاهر.
+          </p>
+
+          <!-- Audio Player Container -->
+          <div class="audio-player-wrapper">
+            <!-- Hidden Native HTML5 Audio Element -->
+            <!-- REPLACE AUDIO FILE AT: assets/youssef-voice.mp3 -->
+            <audio id="firm-audio" preload="metadata">
+              <source src="assets/youssef-voice.mp3" type="audio/mpeg">
+              متصفحك لا يدعم تشغيل الملف الصوتي.
+            </audio>
+
+            <!-- Custom Elegant Audio Player UI -->
+            <div class="custom-audio-player" id="custom-audio-player">
+              <!-- Play / Pause Button -->
+              <button class="audio-play-btn" id="audio-play-btn" aria-label="تشغيل الكلمة الصوتية">
+                <svg id="play-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg id="pause-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" style="display:none;">
+                  <rect x="6" y="4" width="4" height="16"></rect>
+                  <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+              </button>
+
+              <!-- Progress & Waves -->
+              <div class="audio-track-container">
+                <div class="audio-info-row">
+                  <span class="audio-speaker">الأستاذ يوسف مصطفى ضاهر — كلمة ترحيبية</span>
+                  <div class="audio-timer">
+                    <span id="current-time">00:00</span> / <span id="duration-time">00:00</span>
+                  </div>
+                </div>
+                
+                <!-- Animated Visualizer Bars -->
+                <div class="sound-wave-bars" id="wave-bars">
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                  <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+
+                <!-- Custom Progress Bar -->
+                <div class="progress-bar-wrapper" id="progress-container">
+                  <div class="progress-bar-fill" id="progress-bar"></div>
+                </div>
+              </div>
+
+              <!-- Volume Control -->
+              <div class="audio-volume-control">
+                <button class="volume-btn" id="volume-btn" aria-label="كتم أو تشغيل الصوت">
+                  <svg id="vol-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  </svg>
+                  <svg id="vol-mute-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <line x1="23" y1="9" x2="17" y2="15"></line>
+                    <line x1="17" y1="9" x2="23" y2="15"></line>
+                  </svg>
+                </button>
+                <input type="range" class="volume-slider" id="volume-slider" min="0" max="1" step="0.05" value="1" aria-label="مستوى الصوت">
+              </div>
+            </div>
+
+            <!-- Fallback Info Notice for the Office Owner -->
+            <div class="audio-notice" id="audio-notice">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>ملاحظة: يمكنك استبدال الملف الصوتي بكلمة مسجلة في المسار <code>assets/youssef-voice.mp3</code> في أي وقت.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PAGE 3 — CONSULTATION REQUEST (حجز استشارة قانونية)
+         ========================================================================= -->
+    <section class="section consultation-section" id="consultation">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">طلب موعد</span>
+          <h2 class="section-title">حجز استشارة قانونية</h2>
+          <div class="title-ornament">
+            <span class="line"></span>
+            <span class="symbol">⚖</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-subtitle">
+            يمكنك إرسال طلب استشارة قانونية من خلال النموذج التالي، وسيتواصل معك فريق المكتب لمتابعة طلبك.
+          </p>
+        </div>
+
+        <!-- Urgent Notice Box -->
+        <div class="urgent-contact-banner reveal">
+          <div class="urgent-banner-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="urgent-banner-text">
+            <strong>للاستشارات العاجلة:</strong> يمكنك التواصل معنا مباشرة عبر الهاتف أو واتساب على مدار أيام العمل.
+          </div>
+          <div class="urgent-banner-actions">
+            <a href="tel:01023838513" class="btn btn-sm btn-outline-light">اتصال: 01023838513</a>
+            <a href="https://wa.me/201023838513" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp">واتساب فوري</a>
+          </div>
+        </div>
+
+        <div class="consultation-form-wrapper reveal">
+          <form class="consultation-form" id="consultation-form" novalidate>
+            <div class="form-grid">
+              
+              <!-- الاسم الكامل -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">
+                  الاسم الكامل <span class="required-star">*</span>
+                </label>
+                <div class="input-icon-wrapper">
+                  <input type="text" id="fullName" name="fullName" class="form-input" placeholder="مثال: محمد أحمد علي" required autocomplete="name">
+                  <span class="input-icon">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </span>
+                </div>
+                <span class="error-msg" id="nameError">يرجى إدخال الاسم الكامل (حرفين على الأقل).</span>
+              </div>
+
+              <!-- البريد الإلكتروني -->
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  البريد الإلكتروني <span class="required-star">*</span>
+                </label>
+                <div class="input-icon-wrapper">
+                  <input type="email" id="email" name="email" class="form-input" placeholder="name@example.com" dir="ltr" style="text-align: right;" required autocomplete="email">
+                  <span class="input-icon">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </span>
+                </div>
+                <span class="error-msg" id="emailError">يرجى إدخال بريد إلكتروني صالح.</span>
+              </div>
+
+              <!-- رقم الهاتف -->
+              <div class="form-group">
+                <label for="phone" class="form-label">
+                  رقم الهاتف <span class="required-star">*</span>
+                </label>
+                <div class="input-icon-wrapper">
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="مثال: 01023838513" dir="ltr" style="text-align: right;" required autocomplete="tel">
+                  <span class="input-icon">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </span>
+                </div>
+                <span class="error-msg" id="phoneError">يرجى إدخال رقم هاتف صحيح (على الأقل 8 أرقام).</span>
+              </div>
+
+              <!-- نوع الاستشارة -->
+              <div class="form-group">
+                <label for="consultationType" class="form-label">
+                  نوع الاستشارة <span class="required-star">*</span>
+                </label>
+                <div class="input-icon-wrapper select-wrapper">
+                  <select id="consultationType" name="consultationType" class="form-select" required>
+                    <option value="" disabled selected>اختر نوع الاستشارة القانونية</option>
+                    <option value="تأسيس شركات">تأسيس شركات</option>
+                    <option value="ملكية فكرية">ملكية فكرية</option>
+                    <option value="تسجيل علامة تجارية">تسجيل علامة تجارية</option>
+                    <option value="رعاية الأجانب والجنسية">رعاية الأجانب والجنسية</option>
+                    <option value="قانون الأسرة">قانون الأسرة</option>
+                    <option value="القانون المدني">القانون المدني</option>
+                    <option value="القانون الجنائي">القانون الجنائي</option>
+                    <option value="القانون المالي والتجاري">القانون المالي والتجاري</option>
+                    <option value="أخرى">أخرى</option>
+                  </select>
+                  <span class="input-icon">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </div>
+                <span class="error-msg" id="typeError">يرجى اختيار نوع الاستشارة.</span>
+              </div>
+
+              <!-- تفاصيل الاستشارة -->
+              <div class="form-group form-group-full">
+                <label for="details" class="form-label">
+                  تفاصيل الاستشارة <span class="required-star">*</span>
+                </label>
+                <textarea id="details" name="details" class="form-textarea" rows="5" placeholder="يرجى كتابة نبذة موجزة ومحددة عن الموضوع أو المسألة القانونية المراد الاستشارة بشأنها..." required></textarea>
+                <div class="textarea-footer">
+                  <span class="privacy-hint">🔒 جميع البيانات والاستشارات تخضع لأعلى معايير السرية المهنية.</span>
+                  <span class="char-count" id="char-count">0 حرف</span>
+                </div>
+                <span class="error-msg" id="detailsError">يرجى كتابة تفاصيل الاستشارة (10 أحرف على الأقل).</span>
+              </div>
+            </div>
+
+            <!-- Submit Button & Feedback -->
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-gold btn-lg submit-btn" id="submit-btn">
+                <span class="btn-text">إرسال طلب الاستشارة</span>
+                <span class="btn-spinner" style="display:none;"></span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </div>
+          </form>
+
+          <!-- Form Success / Confirmation Modal -->
+          <div class="modal-overlay" id="success-modal" style="display: none;">
+            <div class="modal-card">
+              <div class="modal-icon-success">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <h3 class="modal-title">تم استلام طلب الاستشارة بنجاح</h3>
+              <p class="modal-message">
+                شكراً لتواصلك مع مكتب المصطفى للمحاماة والاستشارات القانونية. سيتواصل معك فريق المكتب لمتابعة طلبك وتحديد موعد الاستشارة في أقرب وقت.
+              </p>
+              <div class="modal-summary" id="modal-summary"></div>
+              
+              <div class="modal-actions">
+                <button type="button" class="btn btn-gold" id="close-modal-btn">إغلاق</button>
+                <a href="#" id="modal-wa-btn" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                  إرسال نسخة عبر واتساب
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CONTACT SECTION (اتصل بنا)
+         ========================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">قنوات الاتصال المباشر</span>
+          <h2 class="section-title">اتصل بنا</h2>
+          <div class="title-ornament">
+            <span class="line"></span>
+            <span class="symbol">⚖</span>
+            <span class="line"></span>
+          </div>
+          <p class="section-subtitle">
+            يسعدنا استقبال اتصالاتكم ومراسلاتكم وتقديم المساندة القانونية السريعة والمهنية.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Card 1: Phone -->
+          <div class="contact-card reveal">
+            <div class="contact-card-icon phone-icon-color">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">الهاتف المباشر</h3>
+            <p class="contact-card-desc">اتصال هاتفي للمتابعة والاستفسارات</p>
+            <div class="contact-card-value" dir="ltr">01023838513</div>
+            <a href="tel:01023838513" class="btn btn-outline-dark btn-full">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              اتصال مباشر
+            </a>
+          </div>
+
+          <!-- Card 2: WhatsApp -->
+          <div class="contact-card reveal">
+            <div class="contact-card-icon wa-icon-color">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">واتساب الفوري</h3>
+            <p class="contact-card-desc">محادثة فورية وسريعة للاستفسارات</p>
+            <div class="contact-card-value" dir="ltr">01023838513</div>
+            <a href="https://wa.me/201023838513" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              تواصل عبر واتساب
+            </a>
+          </div>
+
+          <!-- Card 3: Email -->
+          <div class="contact-card reveal">
+            <div class="contact-card-icon email-icon-color">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-card-title">البريد الإلكتروني</h3>
+            <p class="contact-card-desc">للمراسلات الرسمية وإرسال المستندات</p>
+            <div class="contact-card-value email-text" dir="ltr">Almostafa.law@outlook.com</div>
+            <a href="mailto:Almostafa.law@outlook.com" class="btn btn-outline-dark btn-full">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              إرسال بريد إلكتروني
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER & DISCLAIMER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo-wrapper">
+            <img src="assets/logo.png" alt="شعار مكتب المصطفى للمحاماة" class="footer-logo">
+          </div>
+          <div class="footer-brand-title">مكتب المصطفى للمحاماة والاستشارات القانونية</div>
+          <div class="footer-founder-name">الأستاذ يوسف مصطفى ضاهر</div>
+          <p class="footer-about">
+            خدمات قانونية متخصصة وحلول عملية للأفراد والشركات في مختلف فروع القانون، مع الالتزام بأعلى معايير السرية والدقة.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-heading">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">خدماتنا القانونية</a></li>
+            <li><a href="#why-us">لماذا مكتب المصطفى؟</a></li>
+            <li><a href="#team">فريقنا</a></li>
+            <li><a href="#consultation">حجز استشارة</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Summary -->
+        <div class="footer-col">
+          <h4 class="footer-heading">معلومات التواصل</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="f-icon">📞</span>
+              <a href="tel:01023838513" dir="ltr">01023838513</a>
+            </li>
+            <li>
+              <span class="f-icon">💬</span>
+              <a href="https://wa.me/201023838513" target="_blank" rel="noopener noreferrer" dir="ltr">01023838513 (واتساب)</a>
+            </li>
+            <li>
+              <span class="f-icon">✉️</span>
+              <a href="mailto:Almostafa.law@outlook.com" dir="ltr">Almostafa.law@outlook.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Legal Disclaimer -->
+      <div class="footer-disclaimer">
+        <div class="disclaimer-badge">إخلاء مسؤولية قانونية</div>
+        <p class="disclaimer-text">
+          المعلومات الواردة في هذا الموقع لأغراض تعريفية عامة ولا تُعد بديلاً عن الاستشارة القانونية المتخصصة. تختلف الإجراءات والنتائج القانونية بحسب ظروف كل حالة والقوانين واجبة التطبيق.
+        </p>
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          © 2026 مكتب المصطفى للمحاماة والاستشارات القانونية — جميع الحقوق محفوظة.
+        </p>
+        <p class="founder-credit">
+          إشراف: الأستاذ يوسف مصطفى ضاهر
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING ACTIONS (WhatsApp & Mobile Call Buttons)
+       ========================================================================= -->
+  <div class="floating-actions" aria-label="أزرار التواصل السريع">
+    <!-- WhatsApp Floating Button (Desktop & Mobile) -->
+    <a href="https://wa.me/201023838513" target="_blank" rel="noopener noreferrer" class="floating-btn floating-wa" aria-label="تواصل معنا عبر واتساب">
+      <span class="floating-tooltip">تواصل معنا عبر واتساب</span>
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span class="floating-pulse"></span>
+    </a>
+
+    <!-- Mobile Quick Call Floating Button -->
+    <a href="tel:01023838513" class="floating-btn floating-call" aria-label="اتصال هاتفي مباشر">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+    </a>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="back-to-top" aria-label="الرجوع إلى أعلى الصفحة">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
