@@ -2266,71 +2266,45 @@ body, html {
   object-fit: cover;
 }
 /* ==========================================
-   إجبار كارت الاستشارة على التوسط بأعلى أولوية
+   CONSULTATION SECTION — FIX
    ========================================== */
 .consultation-section {
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  clear: both !important;
+  width: 100%;
+  display: block;
+  background-color: var(--bg-light);
+}
+
+.consultation-section .container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: 24px;
 }
 
 .consultation-form-wrapper {
-  width: 100% !important;
-  max-width: 850px !important; /* عرض مريح وواسع للكمبيوتر */
-  margin: 40px auto !important; /* يضعه في المنتصف تماماً */
-  padding: 40px 30px !important;
-  box-sizing: border-box !important;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 45px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-md);
+  box-sizing: border-box;
 }
 
-/* للموبايل والأندرويد */
 @media (max-width: 768px) {
   .consultation-form-wrapper {
-    max-width: 92% !important;
-    padding: 20px 15px !important;
+    max-width: 100%;
+    padding: 24px 16px;
   }
 
   .form-grid {
-    grid-template-columns: 1fr !important; /* تحويل الحقول لعمود واحد */
-    gap: 16px !important;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .submit-btn {
-    width: 100% !important;
-  }
-}
-/* ==========================================
-   توسيع عمود الاستشارات والتواصل ليصبح عريضاً ومريحاً
-   ========================================== */
-
-/* 1. تكبير عرض الحاوية الجامعة للكارتين */
-.consultation-form-wrapper,
-.urgent-consultation-card, /* أو الكلاس الخاص بالكارت العلوي */
-.contact-sidebar {
-  width: 100% !important;
-  max-width: 850px !important; /* زيادة العرض ليكون عريضاً ومرتاحاً */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  box-sizing: border-box !important;
-}
-
-/* 2. إعادة إعطاء مساحة داخلية مرتاحة للحقول لتظهر النصوص كاملاً */
-.form-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important; /* توزيع الحقول على عمودين متناسقين */
-  gap: 20px !important;
-}
-
-/* 3. التجاوب التلقائي للهواتف والشاشات الصغيرة */
-@media (max-width: 768px) {
-  .consultation-form-wrapper,
-  .contact-sidebar {
-    max-width: 95% !important;
-    padding: 20px 15px !important;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr !important; /* تحويل الحقول لعمود واحد على الموبايل */
-    gap: 16px !important;
+    width: 100%;
   }
 }
