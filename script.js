@@ -437,84 +437,63 @@ document.addEventListener('DOMContentLoaded', () => {
       // })
       // =========================================================================
 
-      setTimeout(() => {
-        // Reset submit button state
+        // ============ إرسال فعلي عبر Web3Forms ============
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+      .then(response => response.json())
+      .then(data => {
+        // إعادة الزر لحالته
         submitBtn.disabled = false;
         btnText.textContent = originalText;
         if (btnSpinner) btnSpinner.style.display = 'none';
 
-        // Prepare Summary for the Success Modal
-        const nameVal = fullNameInput.value.trim();
-        const emailVal = emailInput.value.trim();
-        const phoneVal = phoneInput.value.trim();
-        const typeVal = consultationTypeSelect.value;
-        const detailsVal = detailsTextarea.value.trim();
+        if (data.success) {
+          // نجاح — عرض Modal
+          const nameVal = fullNameInput.value.trim();
+          const emailVal = emailInput.value.trim();
+          const phoneVal = phoneInput.value.trim();
+          const typeVal = consultationTypeSelect.value;
+          const detailsVal = detailsTextarea.value.trim();
 
-        if (modalSummary) {
-          modalSummary.innerHTML = `
-            <div><strong>مقدم الطلب:</strong> ${escapeHtml(nameVal)}</div>
-            <div><strong>رقم الهاتف:</strong> <span dir="ltr">${escapeHtml(phoneVal)}</span></div>
-            <div><strong>نوع الاستشارة:</strong> ${escapeHtml(typeVal)}</div>
-          `;
+          if (modalSummary) {
+            modalSummary.innerHTML = `
+              <div><strong>مقدم الطلب:</strong> ${escapeHtml(nameVal)}</div>
+              <div><strong>رقم الهاتف:</strong> <span dir="ltr">${escapeHtml(phoneVal)}</span></div>
+              <div><strong>نوع الاستشارة:</strong> ${escapeHtml(typeVal)}</div>
+            `;
+          }
+
+          // WhatsApp direct link
+          if (modalWaBtn) {
+            const waMessage = encodeURIComponent(
+              `السلام عليكم ورحمة الله،\nأود تأكيد طلب استشارة قانونية:\n` +
+              `- الاسم: ${nameVal}\n` +
+              `- الهاتف: ${phoneVal}\n` +
+              `- البريد: ${emailVal}\n` +
+              `- نوع الاستشارة: ${typeVal}\n` +
+              `- تفاصيل موجزة: ${detailsVal}`
+            );
+            modalWaBtn.href = `https://wa.me/201023838513?text=${waMessage}`;
+          }
+
+          // عرض Modal
+          if (successModal) {
+            successModal.style.display = 'flex';
+          }
+
+          // تفريغ الفورم
+          form.reset();
+          if (charCountEl) charCountEl.textContent = '0 حرف';
+        } else {
+          alert('حدث خطأ: ' + (data.message || 'حاول مرة أخرى'));
         }
-
-        // WhatsApp direct link with pre-filled message
-        if (modalWaBtn) {
-          const waMessage = encodeURIComponent(
-            `السلام عليكم ورحمة الله،\nأود تأكيد طلب استشارة قانونية:\n` +
-            `- الاسم: ${nameVal}\n` +
-            `- الهاتف: ${phoneVal}\n` +
-            `- البريد: ${emailVal}\n` +
-            `- نوع الاستشارة: ${typeVal}\n` +
-            `- تفاصيل موجزة: ${detailsVal}`
-          );
-          modalWaBtn.href = `https://wa.me/201023838513?text=${waMessage}`;
-        }
-
-        // Show Modal
-        if (successModal) {
-          successModal.style.display = 'flex';
-        }
-
-        // Clear Form fields
-        form.reset();
-        if (charCountEl) charCountEl.textContent = '0 حرف';
-      }, 700);
-    });
-  }
-
-  // Modal Close Handlers
-  if (closeModalBtn && successModal) {
-    closeModalBtn.addEventListener('click', () => {
-      successModal.style.display = 'none';
-    });
-
-    successModal.addEventListener('click', (e) => {
-      if (e.target === successModal) {
-        successModal.style.display = 'none';
-      }
-    });
-  }
-
-  // Helper to prevent XSS in modal rendering
-  function escapeHtml(string) {
-    const div = document.createElement('div');
-    div.innerText = string;
-    return div.innerHTML;
-  }
-
-  // ---------------------------------------------------------------------------
-  // 6. GLOBAL HELPER: PRESELECT SERVICE FROM SERVICES CARDS
-  // ---------------------------------------------------------------------------
-  window.preselectService = function(serviceName) {
-    if (consultationTypeSelect) {
-      for (let i = 0; i < consultationTypeSelect.options.length; i++) {
-        if (consultationTypeSelect.options[i].value === serviceName) {
-          consultationTypeSelect.selectedIndex = i;
-          setFieldError(consultationTypeSelect, false);
-          break;
-        }
-      }
-    }
-  };
-});
+      })
+      .catch(error => {
+        console.error('Submission error:', error);
+        submitBtn.disabled = false;
+        btnText.textContent = originalText;
+        if (btnSpinner) btnSpinner.style.display = 'none';
+        alert('حدث خطأ في الاتصال. جرب مرة أخرى أو تواصل عبر واتساب.');
+      });
