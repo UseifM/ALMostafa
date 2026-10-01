@@ -2299,3 +2299,38 @@ body, html {
     width: 100% !important;
   }
 }
+/* ==========================================
+   توسيع عمود الاستشارات والتواصل ليصبح عريضاً ومريحاً
+   ========================================== */
+
+/* 1. تكبير عرض الحاوية الجامعة للكارتين */
+.consultation-form-wrapper,
+.urgent-consultation-card, /* أو الكلاس الخاص بالكارت العلوي */
+.contact-sidebar {
+  width: 100% !important;
+  max-width: 850px !important; /* زيادة العرض ليكون عريضاً ومرتاحاً */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* 2. إعادة إعطاء مساحة داخلية مرتاحة للحقول لتظهر النصوص كاملاً */
+.form-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important; /* توزيع الحقول على عمودين متناسقين */
+  gap: 20px !important;
+}
+
+/* 3. التجاوب التلقائي للهواتف والشاشات الصغيرة */
+@media (max-width: 768px) {
+  .consultation-form-wrapper,
+  .contact-sidebar {
+    max-width: 95% !important;
+    padding: 20px 15px !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important; /* تحويل الحقول لعمود واحد على الموبايل */
+    gap: 16px !important;
+  }
+}
