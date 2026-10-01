@@ -2264,125 +2264,49 @@ body, html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-/* ==========================================
-   FORCE FIX — كارت الاستشارة في النص
-   ========================================== */
-
-/* 1. القسم نفسه */
-section#consultation.consultation-section {
-  display: block !important;
-  width: 100% !important;
-  padding-block: 90px !important;
-  background-color: #f8fafc !important;
+}/* إصلاح كارت الاستشارة */
+#consultation {
+  display: block;
+  width: 100%;
 }
 
-/* 2. الحاوية الداخلية */
-section#consultation.consultation-section > .container {
-  display: block !important;
-  width: 100% !important;
-  max-width: 1200px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 24px !important;
-  padding-right: 24px !important;
-  float: none !important;
+#consultation .container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* 3. البانر العاجل */
-section#consultation .urgent-contact-banner {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  width: 100% !important;
-  max-width: 1000px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-bottom: 32px !important;
+#consultation .consultation-form-wrapper {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #e5e9f0;
+  box-shadow: 0 4px 20px rgba(11, 25, 44, 0.08);
 }
 
-/* 4. الكارت — ده أهم واحد */
-section#consultation .consultation-form-wrapper {
-  display: block !important;
-  position: relative !important;
-  width: 100% !important;
-  max-width: 1000px !important;
-  min-width: 0 !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding: 50px 45px !important;
-  box-sizing: border-box !important;
-  float: none !important;
-  left: auto !important;
-  right: auto !important;
-  transform: none !important;
-  background: #ffffff !important;
-  border-radius: 20px !important;
-  border: 1px solid #e5e9f0 !important;
-  box-shadow: 0 4px 20px rgba(11, 25, 44, 0.08) !important;
+#consultation .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-/* 5. الفورم نفسه */
-section#consultation .consultation-form {
-  display: block !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+#consultation .form-group-full {
+  grid-column: 1 / -1;
 }
 
-/* 6. شبكة الحقول */
-section#consultation .form-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 24px !important;
-  width: 100% !important;
-}
-
-section#consultation .form-group-full {
-  grid-column: 1 / -1 !important;
-}
-
-/* 7. الحقول */
-section#consultation .form-input,
-section#consultation .form-select,
-section#consultation .form-textarea {
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-/* ==========================================
-   موبايل
-   ========================================== */
-@media (max-width: 860px) {
-  section#consultation.consultation-section {
-    padding-block: 60px !important;
+@media (max-width: 768px) {
+  #consultation .consultation-form-wrapper {
+    padding: 25px 16px;
   }
-
-  section#consultation .consultation-form-wrapper {
-    max-width: 100% !important;
-    padding: 32px 22px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  section#consultation .consultation-form-wrapper {
-    padding: 24px 16px !important;
-    border-radius: 12px !important;
-  }
-
-  section#consultation .form-grid {
-    grid-template-columns: 1fr !important;
-    gap: 18px !important;
-  }
-
-  section#consultation .form-input,
-  section#consultation .form-select,
-  section#consultation .form-textarea {
-    font-size: 16px !important;
-  }
-
-  section#consultation .submit-btn {
-    width: 100% !important;
+  
+  #consultation .form-grid {
+    grid-template-columns: 1fr;
   }
 }
