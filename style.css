@@ -1611,42 +1611,6 @@ ul {
   flex-wrap: wrap;
 }
 
-/* ==========================================
-   كرت حجز الاستشارة (في منتصف الشاشة ومرتاح)
-   ========================================== */
-
-/* 1. ضبط الكارت على الكمبيوتر */
-.consultation-form-wrapper {
-  width: 100%;
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 40px 35px;
-  box-sizing: border-box;
-}
-
-/* 2. ضبط الكارت على أجهزة الأندرويد والموبايل */
-@media (max-width: 768px) {
-  .consultation-form-wrapper {
-    max-width: 92%;
-    margin: 20px auto;
-    padding: 24px 16px;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-  }
-
-  .form-input,
-  .form-select,
-  .form-textarea {
-    font-size: 16px !important;
-  }
-
-  .submit-btn {
-    width: 100% !important;
-  }
-}
 /* --------------------------------------------------------------------------
    12. CONTACT SECTION (اتصل بنا)
    -------------------------------------------------------------------------- */
@@ -2246,12 +2210,6 @@ body, html {
 }
 .team-card:nth-child(2) .team-photo {
   object-position: center 70%;
-}
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 380px));
-  justify-content: center;
-  gap: 24px;
 }
 
 .team-photo-wrapper {
