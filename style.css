@@ -2201,3 +2201,6 @@ body, html {
   max-width: 100vw;
   overflow-x: hidden;
 }
+   .team-photo {
+  object-position: center 20%;
+}
