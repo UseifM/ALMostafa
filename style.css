@@ -1611,32 +1611,40 @@ ul {
   flex-wrap: wrap;
 }
 
-/* 1. ضبط عرض نموذج الاستشارة وتوسطه على شاشات الكمبيوتر */
+/* ==========================================
+   كرت حجز الاستشارة (في منتصف الشاشة ومرتاح)
+   ========================================== */
+
+/* 1. ضبط الكارت على الكمبيوتر */
 .consultation-form-wrapper {
-  max-width: 750px; /* تحديد أقصى عرض للعمود على الكمبيوتر ليكون مريحاً للعين */
-  margin: 0 auto;   /* وضع العمود في منتصف الصفحة تماماً */
+  width: 100%;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 40px 35px;
+  box-sizing: border-box;
 }
 
-/* 2. ضبط التجاوب التلقائي لأجهزة الأندرويد والموبايل */
+/* 2. ضبط الكارت على أجهزة الأندرويد والموبايل */
 @media (max-width: 768px) {
   .consultation-form-wrapper {
-    padding: 24px 16px !important; /* تقليل الحواف على الموبايل */
-    width: 100% !important;
+    max-width: 92%;
+    margin: 20px auto;
+    padding: 24px 16px;
   }
 
   .form-grid {
-    grid-template-columns: 1fr !important; /* تحويل التوزيع لعمود واحد رأسي */
+    grid-template-columns: 1fr !important;
     gap: 16px !important;
   }
 
   .form-input,
   .form-select,
   .form-textarea {
-    font-size: 16px !important; /* منع التكبير التلقائي في متصفح كروم للأندرويد */
+    font-size: 16px !important;
   }
 
   .submit-btn {
-    width: 100% !important; /* جعل زر الإرسال بعرض الشاشة */
+    width: 100% !important;
   }
 }
 /* --------------------------------------------------------------------------
