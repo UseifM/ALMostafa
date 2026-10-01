@@ -2266,12 +2266,15 @@ body, html {
   object-fit: cover;
 }
 /* ==========================================
-   CONSULTATION SECTION — FIX
+   CONSULTATION SECTION — FINAL FIX
    ========================================== */
+
+/* القسم نفسه - عرض كامل وعادي */
 .consultation-section {
   width: 100%;
   display: block;
   background-color: var(--bg-light);
+  padding-block: 90px;
 }
 
 .consultation-section .container {
@@ -2281,11 +2284,19 @@ body, html {
   padding-inline: 24px;
 }
 
+/* بانر الاستشارات العاجلة - عرض كامل */
+.urgent-contact-banner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 32px;
+}
+
+/* كارت الفورم - في النص، عريض، مرن */
 .consultation-form-wrapper {
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto 40px;
-  padding: 45px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 45px;
   background: var(--white);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-card);
@@ -2293,18 +2304,75 @@ body, html {
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+/* الشبكة: عمودين على الكمبيوتر */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+/* الحقول - عرض مريح */
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* الموبايل والتابلت */
+@media (max-width: 860px) {
   .consultation-form-wrapper {
     max-width: 100%;
+    padding: 32px 24px;
+    margin: 0 auto;
+  }
+
+  .urgent-contact-banner {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .consultation-section {
+    padding-block: 60px;
+  }
+
+  .consultation-form-wrapper {
     padding: 24px 16px;
+    border-radius: var(--radius-md);
   }
 
   .form-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 18px;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px; /* يمنع التكبير التلقائي في iPhone */
   }
 
   .submit-btn {
+    width: 100%;
+  }
+
+  .urgent-contact-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .urgent-banner-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .urgent-banner-actions .btn {
     width: 100%;
   }
 }
