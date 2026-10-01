@@ -2208,3 +2208,6 @@ body, html {
 .team-photo {
   object-position: center 10%;
 }
+.team-card:nth-child(2) .team-photo {
+  object-position: center 15%;
+}
