@@ -2265,3 +2265,37 @@ body, html {
   height: 100%;
   object-fit: cover;
 }
+/* ==========================================
+   إجبار كارت الاستشارة على التوسط بأعلى أولوية
+   ========================================== */
+.consultation-section {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  clear: both !important;
+}
+
+.consultation-form-wrapper {
+  width: 100% !important;
+  max-width: 850px !important; /* عرض مريح وواسع للكمبيوتر */
+  margin: 40px auto !important; /* يضعه في المنتصف تماماً */
+  padding: 40px 30px !important;
+  box-sizing: border-box !important;
+}
+
+/* للموبايل والأندرويد */
+@media (max-width: 768px) {
+  .consultation-form-wrapper {
+    max-width: 92% !important;
+    padding: 20px 15px !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important; /* تحويل الحقول لعمود واحد */
+    gap: 16px !important;
+  }
+
+  .submit-btn {
+    width: 100% !important;
+  }
+}
