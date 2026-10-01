@@ -1611,6 +1611,26 @@ ul {
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .consultation-form-wrapper {
+    padding: 20px 15px !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px !important;
+  }
+
+  .submit-btn {
+    width: 100% !important;
+  }
+}
 /* --------------------------------------------------------------------------
    12. CONTACT SECTION (اتصل بنا)
    -------------------------------------------------------------------------- */
