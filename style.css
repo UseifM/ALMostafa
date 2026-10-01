@@ -1611,24 +1611,32 @@ ul {
   flex-wrap: wrap;
 }
 
+/* 1. ضبط عرض نموذج الاستشارة وتوسطه على شاشات الكمبيوتر */
+.consultation-form-wrapper {
+  max-width: 750px; /* تحديد أقصى عرض للعمود على الكمبيوتر ليكون مريحاً للعين */
+  margin: 0 auto;   /* وضع العمود في منتصف الصفحة تماماً */
+}
+
+/* 2. ضبط التجاوب التلقائي لأجهزة الأندرويد والموبايل */
 @media (max-width: 768px) {
   .consultation-form-wrapper {
-    padding: 20px 15px !important;
+    padding: 24px 16px !important; /* تقليل الحواف على الموبايل */
+    width: 100% !important;
   }
 
   .form-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr !important; /* تحويل التوزيع لعمود واحد رأسي */
     gap: 16px !important;
   }
 
   .form-input,
   .form-select,
   .form-textarea {
-    font-size: 16px !important;
+    font-size: 16px !important; /* منع التكبير التلقائي في متصفح كروم للأندرويد */
   }
 
   .submit-btn {
-    width: 100% !important;
+    width: 100% !important; /* جعل زر الإرسال بعرض الشاشة */
   }
 }
 /* --------------------------------------------------------------------------
